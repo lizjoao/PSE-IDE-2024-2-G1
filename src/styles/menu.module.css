@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Milanello';
+    src: url('/fonts/Milanello.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    background-color: #332641;
+    opacity: 90%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 13.8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    
+    z-index: 1000; /* Certifique-se de que o menu esteja acima de outros elementos na página */
+  }
+  
+  .menuItem {
+    color: white; /* Text color for menu items */
+    font-size: 2vw; /* Adjust the font size as needed */
+    font-family: 'Milanello', sans-serif;
+    margin: auto;
+    text-decoration: none;
+  }

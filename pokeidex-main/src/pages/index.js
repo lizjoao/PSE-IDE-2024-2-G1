@@ -1,8 +1,8 @@
 import Menu from './menu.js'
 import Header from './header.js'
-import Catalogo from './catalogo.js'
-//import Assassinos from './assassinos.js'
-//import Ingressos from './ingressos.js'
+import Starters from './starters.js'
+import AboutUs from './aboutUs.js'
+import Form from './form.js'
 import Footer from './footer.js'
 
 export default function Home() {
@@ -10,7 +10,9 @@ export default function Home() {
     <>
       <Menu />
       <Header />
-      <Catalogo />
+      <Starters />
+      <AboutUs />
+      <Form />
       <Footer />
     </>
   )
