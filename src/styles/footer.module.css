@@ -1,6 +1,11 @@
-
+@font-face {
+  font-family: 'Cairo';
+  src: url('/fonts/Cairo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .container {
-  background-color: #353535;
+  background-color: #000000;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,50 +16,45 @@
 }
 
 .insta,
-.poke,
 .linked,
 .ide {
-  margin: 10px;
+  margin: 14px;
   width: auto;
-  height: 30px;
+  height: 54.77px;
   transition: 0.3s;
 }
 .insta:hover,
-.poke:hover,
 .linked:hover,
 .ide:hover
 {
-    scale: 105%;
+    scale: 120%;
     transition: 0.3s;
 }
 .logos {
   margin-top: 40px;
   height: auto;
+  align-items: center;
 }
 
 .img_canto {
-  display: absolute;
+  display: center;
   margin-left: auto;
   padding-right: 30px;
+  height: 80px;
+  width: 147;
 }
 
 .img_canto img
 {
   max-height: 50px;
+  align-items: end;
 }
 
 .texto_footer {
-  margin: 40px;
-  font-weight: 100;
-  line-height: 30px;
+  color: white; /* Text color for menu items */
+  font-family: 'Cairo', sans-serif;
+  text-decoration: none;
   text-align: center;
-}
-
-@media(max-width: 728px){
-
-  .img_canto img
-  {
-    max-height: 35px;
-  }
-
+  font-size: 32px;
+  font-weight: 400;
 }
