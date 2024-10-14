@@ -1,0 +1,31 @@
+[{
+    "AssassinosNomes":{
+        "ListaAssasinos":["Jason","Glaydesombrio"]
+    },
+    "Assasinos":[
+        {
+            "Nome":"",
+            "Path":"public/Assets/Freddy_Fazbear.png"
+        },
+        {
+            "Nome":"",
+            "Path":"public/Assets/Freddy_Krueger.png"
+        },
+        {
+            "Nome":"",
+            "Path":"public/Assets/Leatherface.png"
+        },
+        {
+            "Nome":"",
+            "Path":"public/Assets/Michael_Myers.png"
+        },
+        {
+            "Nome":"",
+            "Path":"public/Assets/Neko_Robin.png"
+        },
+        {
+            "Nome":"",
+            "Path":"public/Assets/Pennywise.png"
+        }
+    ]
+}]
