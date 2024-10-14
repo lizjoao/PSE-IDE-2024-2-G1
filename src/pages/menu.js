@@ -6,7 +6,7 @@ export default function Menu() {
             <a href="#home" className={styles.menuItem}>HOME</a>
             <a href="#catalogo" className={styles.menuItem}>CATALOGO</a>
             <a href="#assassinos" className={styles.menuItem}>ASSASSINOS</a>
-            <a href="#ingresso" className={styles.menuItem}>INGRESSO</a>
+            <a href="#ingressos" className={styles.menuItem}>INGRESSOS</a>
         </div>
     )
 }
