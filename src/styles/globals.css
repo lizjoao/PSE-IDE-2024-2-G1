@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'uni05';
-    src: url('../../public/fonts/uni05_53.ttf');
-    font-style: normal;
-}
-
 html, body, div, span, applet, object, iframe, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -27,7 +21,6 @@ background-image: url('/Assets/Background_Long.png');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: top;
-background-attachment: fixed;
 }
 
 article, aside, details, figcaption, figure,
@@ -53,15 +46,8 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 
-p
-{
-    font-family: uni05;
-}
-
 ::-webkit-scrollbar-track{
-    background-color: #593a7a;
-    border: 1px solid #432663;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #2b0000;
 }
 
 ::-webkit-scrollbar{
@@ -69,8 +55,7 @@ p
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #e7e7e7;
-    box-shadow: 10px -29px 65px -7px rgba(0,0,0,0.75);
+    background-color: #660000;
     border-radius: 0.5rem;
-    border: 1px solid #cacaca;
+    border: 2px solid #ffffff;
 }
