@@ -2,7 +2,7 @@ import Menu from './menu.js'
 import Header from './header.js'
 import Catalogo from './catalogo.js'
 //import Assassinos from './assassinos.js'
-//import Ingressos from './ingressos.js'
+import Ingresso from './ingresso.js'
 import Footer from './footer.js'
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
       <Menu />
       <Header />
       <Catalogo />
+      <Ingresso />
       <Footer />
     </>
   )

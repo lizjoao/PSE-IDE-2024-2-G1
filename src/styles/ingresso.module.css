@@ -4,21 +4,40 @@
     font-style: normal;
 }
 
+@font-face {
+	font-family: 'Milanello';
+	src: url('/fonts/Milanello.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .container{
+    display: flex;
     min-height: 100vh;
     padding: 50px 100px;
-    text-align: center;
     justify-content: center;
 
 }
 
 .title{
-    font-family: uni05, sans-serif;
+    font-family: 'Millanelo', sans-serif;
     font-weight: lighter;
     font-size: 40px;
-    color: #603B88;
-    margin-top: 5%;
-    margin-bottom: 4%;
+    color: white;
+    margin: 5px;
+}
+
+.conteiner_form{
+    display: flex;
+    padding: 10px;
+    justify-content: left;
+    
+}
+.skullCatImg{
+    background-color: black;
+    color: black;
+    height: 300px;
+    width: 300px;
 }
 
 .questions{
@@ -27,54 +46,45 @@
 }
 
 .input{
-    font-family: uni05, sans-serif;
-    width: 73%;
+    font-family: 'Millanelo', sans-serif;
     height: 30px;
-    font-weight: 400;
     font-size: 24px;
-    color: black;
-    background-color: #FFFFFF;
-    border: 2px solid #603B88;
+    color: white;
+    background-color: #D45827;
+    border: 0;
+    border-radius: 10px;
     padding: 10px;
     margin-bottom: 18px; 
+    
 }
-
-.input[type="password"]
-{
-    font-family: inherit;
-    font-size: 16px;
-}
-
+    
 .input::-webkit-input-placeholder{
     color: rgba(96, 59, 136, 0.8);
-    font-family: uni05, sans-serif;
-    font-weight: lighter;
+    font-family: 'Millanelo', sans-serif;
+    font-weight: 400;
     font-size: 24px;
 }
 
-.input::-webkit-input-placeholder::hover{
-    color: #603B88;
-    font-family: uni05, sans-serif;
-    font-weight: lighter;
-}
 
 .submit{
-    background-color: #FFFFFF;
-    color: #603B88;
-    border: solid 2px #603B88;
-    width: 50%;
+    display: block;
+    clear: left;
+    background-color: black;
+    color: #D45827;
+    border: solid 2px #D45827;
     height: 60px;
     padding: 0px 8px; 
     font-size: 32px;
-    font-family: uni05, sans-serif;
+    font-family: 'Millanelo', sans-serif;
     font-weight: 400;
     margin-bottom: 10%;
     cursor: pointer;
+    border-radius: 10px;
     transition: background-color 0.3s;
 }
 
 .submit:hover{
-    background-color: #603B88;
+    background-color: #D45827;
     color: white;
 }
 
