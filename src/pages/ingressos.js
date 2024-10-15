@@ -1,4 +1,4 @@
-import styles from '../styles/ingresso.module.css';
+import styles from '../styles/ingressos.module.css';
 import { useState } from 'react';
 
 export default function Form() {
@@ -39,7 +39,7 @@ export default function Form() {
   };
 
   return (
-    <div id="form" className={styles.container}>
+    <div id="ingressos" className={styles.container}>
       <h1 className={styles.title}>COMPRAR INGRESSO</h1>
       <div className={styles.container_form}>
         <form onSubmit={handleSubmit}>
