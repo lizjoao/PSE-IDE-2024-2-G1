@@ -1,6 +1,5 @@
-import styles from '../styles/ingresso.module.css'
-import { useState, useEffect } from 'react'
-
+import styles from '../styles/ingresso.module.css';
+import { useState } from 'react';
 
 export default function Form() {
 
@@ -10,13 +9,8 @@ export default function Form() {
   const [filme, setFilme] = useState('');
   const [coragem, setCoragem] = useState('');
 
-  const handleNomeChange = (e) => {
-    setNome(e.target.value);
-  };
-
-  const handleMensagemChange = (e) => {
-    setFilme(e.target.value);
-  };
+  const handleNomeChange = (e) => setNome(e.target.value);
+  const handleMensagemChange = (e) => setFilme(e.target.value);
 
   const handleEmailChange = (e) => {
     const value = e.target.value;
@@ -29,14 +23,12 @@ export default function Form() {
     }
   };
 
-  const handleCoragemChange = (e) => {
-    setCoragem(e.target.value);
-  };
+  const handleCoragemChange = (e) => setCoragem(e.target.value);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (nome && email && filme && coragem) {
-      alert('Meu pokémon favorito é: '+nome);
+      alert(`Meu fime favorito é: ${filme} e tenho nivem de coragem ${coragem}`);
       setNome('');
       setEmail('');
       setFilme('');
@@ -46,37 +38,61 @@ export default function Form() {
     }
   };
 
-    return (
-        <div id='form' className={styles.container}>
-          <div>
-            <h1 className={styles.title}>
-                COMPRAR INGRESSO
-            </h1>
-            <div className={styles.conteiner_form}>
-              <form onSubmit={handleSubmit}>
-                <ul className={styles.questions}>
-                  <li>
-                    <input required type="text" className={styles.input} value={nome} onChange={handleNomeChange} placeholder="NOME"/>
-                  </li>
-                  <li>
-                    <input required type="email" className={styles.input} value={email} onChange={handleEmailChange} placeholder="EMAIL"/>
-                  </li>
-                  <li>
-                    <input required type="text" className={styles.input} value={filme} onChange={handleMensagemChange} placeholder="FILME PREFERIDO"/> 
-                  </li>
-                  <li>
-                    <input required type="text" className={styles.input} value={coragem} onChange={handleCoragemChange} placeholder="NIVEL DE CORAGEM"/>
-                  </li>  
-                </ul>
-              </form>
-              <div>
-                <img className={styles.skullCatImg} src="/Assets/Cat_Skull.png"></img>
-              </div>
-                <div>
-                  <button id="submit"className={styles.submit} type="submit">Enviar</button>
-                </div>
-            </div>
-          </div>
+  return (
+    <div id="form" className={styles.container}>
+      <h1 className={styles.title}>COMPRAR INGRESSO</h1>
+      <div className={styles.container_form}>
+        <form onSubmit={handleSubmit}>
+          <ul>
+            <li>
+              <input 
+                required 
+                type="text" 
+                className={styles.input} 
+                value={nome} 
+                onChange={handleNomeChange} 
+                placeholder="NOME" 
+              />
+            </li>
+            <li>
+              <input 
+                required 
+                type="email" 
+                className={styles.input} 
+                value={email} 
+                onChange={handleEmailChange} 
+                placeholder="EMAIL" 
+              />
+              {error && <p className={styles.error}>{error}</p>}
+            </li>
+            <li>
+              <input 
+                required 
+                type="text" 
+                className={styles.input} 
+                value={filme} 
+                onChange={handleMensagemChange} 
+                placeholder="FILME PREFERIDO" 
+              />
+            </li>
+            <li>
+              <input 
+                required 
+                type="text" 
+                className={styles.input} 
+                value={coragem} 
+                onChange={handleCoragemChange} 
+                placeholder="NIVEL DE CORAGEM" 
+              />
+            </li>
+          </ul>
+          <button id="submit" className={styles.submit} type="submit">Enviar</button>
+        </form>
+        <div>
+          <img className={styles.skullCatImg} src="/Assets/Cat_Skull.png" alt="Imagem de um crânio de gato" />
         </div>
-    )
+      </div>
+
+    </div>
+  );
 }
