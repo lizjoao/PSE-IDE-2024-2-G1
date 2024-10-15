@@ -1,113 +1,100 @@
+
 @font-face {
-    font-family: 'uni05';
-    src: url('../../public/fonts/uni05_53.ttf');
+    font-family: 'Milanello';
+    src: url('/fonts/Milanello.otf') format('opentype');
+    font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-	font-family: 'Milanello';
-	src: url('/fonts/Milanello.otf') format('opentype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-.container{
+/* Centralizar e alinhar verticalmente a página */
+.container {
+    background: transparent;
     display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
     min-height: 100vh;
     padding: 50px 100px;
-    justify-content: center;
-
 }
 
-.title{
-    font-family: 'Millanelo', sans-serif;
-    font-weight: lighter;
-    font-size: 40px;
-    color: white;
-    margin: 5px;
+/* Estilo do título */
+.title {
+    align-self: start;
+    font-family: 'Milanello', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 30px;
 }
 
-.conteiner_form{
+/* Formulário centralizado */
+.container_form {
+    align-self: start;
     display: flex;
-    padding: 10px;
-    justify-content: left;
-    
-}
-.skullCatImg{
-    background-color: black;
-    color: black;
-    height: 300px;
-    width: 300px;
+    align-items: center;
+    justify-content: space-between; /* Espaço entre o formulário e a imagem */
 }
 
-.questions{
-    list-style: none;
+/* Estilo dos inputs */
+.input {
+    width: 50vw;
+    height: 3vh;
     margin: 10px 0;
-}
-
-.input{
-    font-family: 'Millanelo', sans-serif;
-    height: 30px;
-    font-size: 24px;
-    color: white;
-    background-color: #D45827;
-    border: 0;
+    padding: 15px;
     border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 18px; 
-    
-}
-    
-.input::-webkit-input-placeholder{
-    color: rgba(96, 59, 136, 0.8);
-    font-family: 'Millanelo', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
+    color: #fff;
+    background-color: #D45827;
+    font-size: 1rem;
+    font-family: 'Milanello', sans-serif;
+    text-transform: uppercase;
 }
 
+.input::placeholder {
+    color: white;
+}
 
-.submit{
-    display: block;
-    clear: left;
-    background-color: black;
+/* Estilo do botão enviar */
+.submit {
+    margin-left: 10vw;
+    background: transparent;
+    width: 35vw;
+    padding: 15px;
+    margin-top: 20px;
+    border: 2px solid #D45827;
     color: #D45827;
-    border: solid 2px #D45827;
-    height: 60px;
-    padding: 0px 8px; 
-    font-size: 32px;
-    font-family: 'Millanelo', sans-serif;
-    font-weight: 400;
-    margin-bottom: 10%;
-    cursor: pointer;
     border-radius: 10px;
-    transition: background-color 0.3s;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: 'Milanello', sans-serif;
 }
 
-.submit:hover{
-    background-color: #D45827;
+.submit:hover {
+    background-color: #f05023;
     color: white;
 }
 
-@media(max-width: 890px){
-
-    .title
-    {
-        font-size: 30px;
-    }
-
+/* Estilização da imagem */
+.skullCatImg {
+    width: 20vw; /* Tamanho da imagem do crânio */
+    height: 20vw;
+    margin-left: 50px; /* Espaçamento entre formulário e imagem */
 }
 
-@media(max-width: 728px){
 
-    .container
-    {
-        padding: 50px 5%;
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container_form {
+        flex-direction: column; /* Empilhar formulário e imagem em telas menores */
+        align-items: center;
     }
 
-    .title
-    {
-        font-size: 25px;
-        margin: 5% 10px;
+    .skullCatImg {
+        margin-left: 0;
+        margin-top: 20px;
     }
 
+    .input, .submit {
+        width: 100%; /* Inputs e botão ocupam 100% da largura em telas menores */
+        max-width: 400px; /* Limite de largura */
+    }
 }
