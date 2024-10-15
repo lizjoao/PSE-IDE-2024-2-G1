@@ -27,8 +27,7 @@
 
 .insta:hover,
 .linked:hover,
-.ide:hover
-{
+.ide:hover {
   scale: 120%;
   transition: 0.3s;
   background: transparent;
@@ -50,8 +49,7 @@
   background: transparent;
 }
 
-.img_canto img
-{
+.img_canto img {
   max-height: 50px;
   align-items: end;
   background: transparent;
