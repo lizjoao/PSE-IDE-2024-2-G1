@@ -7,12 +7,13 @@
 
 .container {
   width: 100%;
+  height: 394px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
-  background: transparent;
+  background: black;
 }
 
 .insta,
@@ -20,7 +21,7 @@
 .ide {
   margin: 14px;
   width: auto;
-  height: 54.77px;
+  height: 54px;
   transition: 0.3s;
   background: transparent;
 }
@@ -34,28 +35,30 @@
 }
 
 .logos {
-  margin-top: 40px;
+  margin: 3%;
   height: auto;
   align-items: center;
   background: transparent;
 }
 
 .img_canto {
-  display: center;
+  display: flex;
   margin-left: auto;
-  padding-right: 30px;
+  padding-right: 50px;
   height: 80px;
-  width: 147;
+  width: 147px;
   background: transparent;
 }
 
-.img_canto img {
-  max-height: 50px;
-  align-items: end;
+.img_canto img
+{
+  max-height: 70px;
+  align-items: center;
   background: transparent;
 }
 
 .texto_footer {
+  background-color: black;
   color: white;
   font-family: 'Cairo';
   text-decoration: none;
