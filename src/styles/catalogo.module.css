@@ -14,7 +14,13 @@
 	background: transparent;
 }
 
+.header{
+	display: flex;	
+	flex-direction: column; /* Alinha os elementos verticalmente */
+}
 .title {
+    align-self: start;
+    display: flex;
 	font-size: 3vw;
 	font-family: 'Milanello';
 	margin-left: 10vw;
@@ -24,7 +30,26 @@
 	color:#ffffff;
 	background: transparent;
 }
+.input {
+    width: 30vw;
+    height: 60px;
+	margin-bottom: 30px;
+	margin-left: 10vw;
+    border-radius: 10px;
+	border-color: transparent;
+    color: #fff;
+    background-color: #D45827;
+    font-size: 1.5rem;
+    font-family: 'Milanello', sans-serif;
+    text-transform: uppercase;
+}
 
+.input::placeholder {
+    opacity: 1 !important;
+    font-size: 1.5rem;
+    color: white;
+	font-size: 20px;
+}
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
