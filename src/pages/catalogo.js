@@ -87,7 +87,8 @@ export default function Catalogo() {
 	const [lista_catalogos, setCatalogos] = useState(catalogos); // Estado para controlar o assassino atual
 	const [filtro, setFiltro] = useState(''); // Estado para controlar o assassino atual
     const filtroLower = filtro.toLowerCase()
-    const catalogos_exib = catalogos.filter(catalogo => catalogo.titulo.toLowerCase().includes(filtroLower))
+    //Aqui ta a parte onde tu altera o filtro basta adicionar || e a condicao, se tu quiser usar a mesma barra de pesquisa pra todas
+    const catalogos_exib = catalogos.filter(catalogo => catalogo.titulo.toLowerCase().includes(filtroLower) || catalogo.id == parseInt(filtroLower))
     
     console.log(filtro)
 	return(
