@@ -93,5 +93,6 @@
     .input, .submit {
         width: 100%; /* Inputs e botão ocupam 100% da largura em telas menores */
         max-width: 400px; /* Limite de largura */
+        margin-left: 0;
     }
 }
