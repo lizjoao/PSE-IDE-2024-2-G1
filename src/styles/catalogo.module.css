@@ -33,6 +33,7 @@
 .input {
     width: 30vw;
     height: 60px;
+	opacity: 0.5;
 	margin-bottom: 30px;
 	margin-left: 10vw;
     border-radius: 10px;
