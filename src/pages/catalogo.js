@@ -21,7 +21,7 @@ export default function Catalogo() {
 				<img src="/Assets/Filme14.png" className={styles.gridItem} />
 				<img src="/Assets/Filme15.png" className={styles.gridItem} />
 				<img src="/Assets/Filme16.png" className={styles.gridItem} />
-				</div>
+			</div>
 		</div>
 	);
 };

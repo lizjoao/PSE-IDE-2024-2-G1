@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'Rammetto';
+  src: url('/fonts/RammettoOne-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('/fonts/Cairo-Regular.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Milanello';
+  src: url('/fonts/Milanello.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  padding-top: 120px;
+  box-sizing: border-box;
+}
+
+/* Container dos Botões */
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 182px;
+  margin-right: 182px;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+/* Estilo dos Botões */
+.button {
+  font-family: 'Rammetto';
+  font-size: 25px;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #7a0000;
+  border-radius: 7px;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efeito Hover nos Botões */
+.button:hover {
+  background-color: #ff0000;
+  transform: scale(1.1);
+}
+
+/* Botão Ativo */
+.activeButton {
+  background-color: #ff0000;
+  transform: scale(1.2);
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  gap: 100px;
+  flex-wrap: wrap-reverse;
+}
+
+.title {
+  text-align: left;
+  margin-left: 182px;
+  font-family: 'Milanello';
+  font-weight: 400;
+  font-size: 55px;
+  color: white;
+  line-height: 55px;
+}
+
+.image {
+  align-self: center;
+  max-height: 550px;
+  width: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 182px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.image.active {
+  opacity: 1;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.info {
+  text-align: left;
+  flex: 1;
+  margin-left: 182px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.info.active {
+  opacity: 1;
+}
+
+.info h2 {
+  font-family: 'Rammetto';
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.info p {
+  font-family: 'Cairo';
+  font-size: 35px;
+  font-weight: 400;
+  color: #ffffff;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 1500px) {
+  .buttons {
+    margin-left: 9vw;
+    margin-right: 9vw;
+
+  }
+  
+  .button {
+    font-size: 15px;
+    padding: 8px 12px;
+    margin: 0 3px;
+  }
+
+  .title {
+    font-size: 40px;
+    margin-left: 9vw;
+    flex-wrap: wrap;
+  }
+
+  .info h2 {
+    font-size: 30px;
+  }
+
+  .info p {
+    font-size: 25px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 50px;
+  }
+
+  .info{
+    text-align: left;
+    margin-left: 9vw;
+    margin-right: 9vw;
+  }
+
+  .image {
+    margin-right: 0px;
+    max-width: 80vw;
+    height: auto;
+  }
+}
