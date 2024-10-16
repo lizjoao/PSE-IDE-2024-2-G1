@@ -79,3 +79,44 @@
 	filter: brightness(1.3);
 	cursor: pointer;
 }
+
+.gridItemContainer {
+    position: relative;
+    width: 100%;
+}
+
+.gridItemContainer:active .gridItem {
+    transform: scale(1.1);
+    filter: brightness(1.3);
+    cursor: pointer;
+}
+
+.infoOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro para contraste */
+    color: orange; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centraliza o texto */
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.infoOverlay h2, .infoOverlay p {
+    margin: 0;
+    font-size: 3vw;
+    color: orange; /* Cor laranja para o texto */
+    text-shadow: 2px 2px 4px #000; 
+    font-weight: bold;
+}
+
+.infoOverlay p {
+    font-size: 1.5vw;
+    margin-top: 10px;
+}
