@@ -133,13 +133,32 @@
     margin-top: 10px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1000px) {
 	.title {
 		font-size: 40px;
 		margin-left: 10vw;
 		flex-wrap: wrap;
 	}
+	.grid{
+		grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+	}
+	.input{
+		align-self: start;
+		width: 80vw; /* Inputs e botão ocupam 100% da largura em telas menores */
+    }
+}
+@media (max-width: 670px) {
+	.title {
+		font-size: 40px;
+		margin-left: 10vw;
+		flex-wrap: wrap;
+	}
+	.grid{
+		grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
+	}
+	.gridItem{
 
+	}
 	.input{
 		align-self: start;
 		width: 80vw; /* Inputs e botão ocupam 100% da largura em telas menores */
