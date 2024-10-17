@@ -130,8 +130,8 @@ export default function Catalogo() {
 
     return (
         <div id='catalogo' className={styles.container}>
+            <h1 className={styles.title}>FILMES EM CARTAZ</h1>
             <div className={styles.header}>
-                <h1 className={styles.title}>FILMES EM CARTAZ</h1>
                 <input 
                     type='search' 
                     value={filtro} 

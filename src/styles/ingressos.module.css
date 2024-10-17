@@ -7,12 +7,15 @@
 
 /* Centralizar e alinhar verticalmente a página */
 .container {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     display: flex;
     flex-direction: column; /* Alinha os elementos verticalmente */
     align-items: center; /* Centraliza horizontalmente */
     justify-content: center; /* Centraliza verticalmente */
-    min-height: 100vh;
-    padding: 50px 100px;
 }
 
 /* Estilo do título */
@@ -35,8 +38,10 @@
 /* Estilo dos inputs */
 .input {
     width: 50vw;
-    height: 3vh;
+    height: 3vw;
+    margin-left: 10vw;
     margin: 10px 0;
+    margin-right: 5vw;
     padding: 15px;
     border-radius: 10px;
     color: #fff;
@@ -54,6 +59,7 @@
 /* Estilo do botão enviar */
 .submit {
     margin-left: 10vw;
+    margin-right: 5vw;
     background: transparent;
     width: 35vw;
     padding: 15px;
@@ -75,7 +81,7 @@
 .skullCatImg {
     width: 20vw; /* Tamanho da imagem do crânio */
     height: 20vw;
-    margin-left: 50px; /* Espaçamento entre formulário e imagem */
+    margin-left: 1vw; /* Espaçamento entre formulário e imagem */
 }
 
 /* Responsividade */
@@ -86,13 +92,20 @@
     }
 
     .skullCatImg {
-        margin-left: 0;
+        align-self: center;
+        margin-left: 15vw;
+        margin-right: 20vw;
         margin-top: 20px;
     }
 
-    .input, .submit {
-        width: 100%; /* Inputs e botão ocupam 100% da largura em telas menores */
-        max-width: 400px; /* Limite de largura */
-        margin-left: 0;
+    .input{
+        align-self: center;
+        width: 70vw; /* Inputs e botão ocupam 100% da largura em telas menores */
+    }
+
+    .submit {
+        align-self: center;
+        width: 70vw; /* Inputs e botão ocupam 100% da largura em telas menores */
+        margin-left: 2.5vw;
     }
 }
