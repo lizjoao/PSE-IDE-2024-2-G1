@@ -38,17 +38,18 @@
 /* Estilo dos inputs */
 .input {
     width: 50vw;
-    height: 3vw;
+    height: 3rem;
     margin-left: 10vw;
     margin: 10px 0;
     margin-right: 5vw;
-    padding: 15px;
+    padding: 1rem;
     border-radius: 10px;
     color: #fff;
     background-color: #D45827;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: 'Milanello', sans-serif;
     text-transform: uppercase;
+    border-color: white;
 }
 
 .input::placeholder {
