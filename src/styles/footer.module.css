@@ -4,23 +4,30 @@
   font-weight: normal;
   font-style: normal;
 }
-
-.container {
+.container1 {
   width: 100%;
   height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+.container2 {
+  width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 30px;
   background: black;
+  padding-left: 10vw;
+  padding-bottom: 1.8vw;
 }
 
 .insta,
 .linked,
 .ide {
-  margin: 14px;
-  width: auto;
+  margin:0.8vw;
   height: 54px;
   transition: 0.3s;
   background: transparent;
@@ -31,87 +38,112 @@
 .ide:hover {
   scale: 120%;
   transition: 0.3s;
-  background: transparent;
 }
 
 .logos {
-  margin: 3%;
-  height: auto;
+  margin-top: 2vw;
   align-items: center;
   background: transparent;
 }
 
 .img_canto {
   display: flex;
-  margin-left: auto;
-  padding-right: 50px;
-  height: 80px;
-  width: 147px;
+  width: 10vw;
+  margin-right: 2vw;
+  align-self: flex-end;
+  margin-bottom: 2vw;
   background: transparent;
+}
+.img_canto img{
+  width: 8vw;
 }
 
-.img_canto img {
-  max-height: 70px;
-  align-items: center;
-  background: transparent;
-}
 
 .texto_footer {
   background-color: black;
   color: white;
   font-family: 'Cairo';
   text-decoration: none;
+  margin: 1vw;
   text-align: center;
   font-size: 32px;
   font-weight: 400;
 }
 
 /* Media Queries para responsividade */
-@media (max-width: 768px) {
-  .container {
-    height: auto;
-    padding-bottom: 20px;
+@media (max-width: 1100px) {
+  .container1 {
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
   }
-
+  .container2 {
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;   
+    padding-left: 0vw;
+  }
   .img_canto {
-    padding-right: 20px;
-    height: 60px;
-    width: 120px;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    margin: 2vw;
+    width: 100vw;
+  }
+  .img_canto img{
+    width: 10vw;
   }
 
-  .img_canto img {
-    max-height: 60px;
-  }
 
   .texto_footer {
     font-size: 24px;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    height: auto;
-    padding-bottom: 15px;
-  }
-
-  .img_canto {
-    padding-right: 10px;
-    height: 50px;
-    width: 100px;
-  }
-
-  .img_canto img {
-    max-height: 50px;
-  }
-
-  .texto_footer {
-    font-size: 18px;
   }
 
   .insta,
   .linked,
   .ide {
-    margin: 10px;
-    height: 40px;
+    margin: 2vw;
+    width: 6vw;
+  }
+  .ide{
+    width: 8vw;
+  }
+}
+@media (max-width: 750px) {
+  .container1 {
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container2 {
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;   
+    padding-left: 0vw;
+  }
+  .img_canto {
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    margin: 2vw;
+    width: 100vw;
+  }
+  .img_canto img{
+    width: 15vw;
+  }
+
+
+  .texto_footer {
+    font-size: 24px;
+  }
+
+  .insta,
+  .linked,
+  .ide {
+    margin: 2vw;
+    width: 8vw;
+  }
+  .ide{
+    width: 12vw;
   }
 }
