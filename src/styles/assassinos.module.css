@@ -40,7 +40,7 @@
 /* Estilo dos Botões */
 .button {
   font-family: 'Rammetto';
-  font-size: 1.5rem;
+  font-size: 1.2vw;
   padding: 10px 15px;
   margin: 0 5px;
   cursor: pointer;
@@ -132,13 +132,14 @@
   .buttons {
     margin-left: 10vw;
     margin-right: 10vw;
-    row-gap: 3vw;
+    justify-content: start;
   }
   
   .button {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 8px 12px;
-    margin: 0 3px;
+    margin-left: 25px;
+    margin-right: 15px;
   }
 
   .info h2 {
@@ -166,11 +167,5 @@
     margin-right: 0px;
     max-width: 80vw;
     height: auto;
-  }
-}
-
-@media (max-width: 1350px) {
-  .buttons {
-    justify-content: start;
   }
 }
