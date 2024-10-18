@@ -68,12 +68,16 @@
     opacity: 1 !important;
     color: white;
 }
-
+.container_submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* Estilo do botão enviar */
 .submit {
-    margin-left: 8.5vw;
     width: 35vw;
     padding: 15px;
+    margin-right: 5.5vw;
     margin-top: 20px;
     border: 2px solid #ff4800;
     color: #ff4800;
@@ -98,11 +102,19 @@
     margin-left: 1vw; /* Espaçamento entre formulário e imagem */
 }
 
+@media (max-width: 988px) {
+    .submit{
+        margin-right: 4.5vw;
+    }
+}
 /* Responsividade */
 @media (max-width: 768px) {
     .container_form {
-        flex-direction: column; /* Empilhar formulário e imagem em telas menores */
-        align-items: center;
+        display: flex; /* Ensure flexbox is enabled */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically  
+     (optional) */
     }
 
     .skullCatImg {
@@ -118,8 +130,7 @@
     }
 
     .submit {
-        align-self: center;
-        width: 70vw; /* Inputs e botão ocupam 100% da largura em telas menores */
-        margin-left: 3vw;
+        width: 60vw;
+        margin-right: 4vw;
     }
 }

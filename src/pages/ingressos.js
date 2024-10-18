@@ -89,7 +89,10 @@ export default function Form() {
               />
             </li>
           </ul>
+          <div className={styles.container_submit}>
           <button id="submit" className={styles.submit} type="submit">Enviar</button>
+            
+          </div>
         </form>
         <div>
           <img className={styles.skullCatImg} src="/Assets/Cat_Skull.png" alt="Imagem de um crânio de gato" />
