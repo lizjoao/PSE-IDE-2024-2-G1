@@ -29,11 +29,11 @@
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-left: 182px;
-  margin-right: 182px;
-  flex-wrap: wrap;
+  justify-content: start;
+  overflow-x: auto; /* Rolagem horizontal sempre habilitada */
+  white-space: nowrap; /* Impede que os botões quebrem para a linha de baixo */
+  scroll-behavior: smooth; /* Rolagem suave */
+  padding: 10px 0; /* Espaçamento superior e inferior para dar um visual de carrossel */
   gap: 26px;
 }
 
