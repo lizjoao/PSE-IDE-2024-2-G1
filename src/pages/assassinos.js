@@ -56,6 +56,7 @@ const assassinosData = [
 export default function Assassinos() {
 	const [currentIndex, setCurrentIndex] = useState(0); // Estado para controlar o assassino atual
 	const [fade, setFade] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
 	// Função para lidar com o clique nos botões
   const handleClick = (index) => {

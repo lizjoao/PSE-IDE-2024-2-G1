@@ -64,9 +64,15 @@
   font-family: 'Cairo';
   text-decoration: none;
   text-align: center;
-  font-size: 3vw;
+  font-size: 28.8px;
   font-weight: 400;
-  line-height: 6vw;
+  line-height: normal;
   margin-left: 3vw;
   margin-right: 3vw;
+}
+
+@media (max-width: 960px) {
+  .texto_footer {
+    font-size: 3vw;
+  }
 }

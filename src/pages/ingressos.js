@@ -8,6 +8,7 @@ export default function Form() {
   const [error, setError] = useState('');
   const [filme, setFilme] = useState('');
   const [coragem, setCoragem] = useState('');
+  const [activeInput, setActiveInput] = useState(null); // State to track active input
 
   const handleNomeChange = (e) => setNome(e.target.value);
   const handleMensagemChange = (e) => setFilme(e.target.value);
@@ -15,12 +16,6 @@ export default function Form() {
   const handleEmailChange = (e) => {
     const value = e.target.value;
     setEmail(value);
-
-    if (!value.includes('@')) {
-      setError('O símbolo "@" está faltando no e-mail.');
-    } else {
-      setError('');
-    }
   };
 
   const handleCoragemChange = (e) => setCoragem(e.target.value);
@@ -28,7 +23,7 @@ export default function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (nome && email && filme && coragem) {
-      alert(`Meu fime favorito é: ${filme} e tenho nivem de coragem ${coragem}`);
+      alert(`Olá ${nome} ${coragem}! Um e-mail foi enviado para ${email} para confirmar a compra do ingresso para o filme ${filme}. O Cine IDE agradece a preferência!`);
       setNome('');
       setEmail('');
       setFilme('');
@@ -48,20 +43,24 @@ export default function Form() {
               <input 
                 required 
                 type="text" 
-                className={styles.input} 
+                className={`${styles.input} ${activeInput === 'nome' ? styles.inputActive : ''}`} 
                 value={nome} 
                 onChange={handleNomeChange} 
                 placeholder="NOME" 
+                onFocus={() => setActiveInput('nome')}
+                onBlur={() => setActiveInput(null)}
               />
             </li>
             <li>
               <input 
                 required 
                 type="email" 
-                className={styles.input} 
+                className={`${styles.input} ${activeInput === 'email' ? styles.inputActive : ''}`} 
                 value={email} 
                 onChange={handleEmailChange} 
                 placeholder="EMAIL" 
+                onFocus={() => setActiveInput('email')}
+                onBlur={() => setActiveInput(null)}
               />
               {error && <p className={styles.error}>{error}</p>}
             </li>
@@ -69,20 +68,24 @@ export default function Form() {
               <input 
                 required 
                 type="text" 
-                className={styles.input} 
+                className={`${styles.input} ${activeInput === 'filme' ? styles.inputActive : ''}`} 
                 value={filme} 
                 onChange={handleMensagemChange} 
                 placeholder="FILME PREFERIDO" 
+                onFocus={() => setActiveInput('filme')}
+                onBlur={() => setActiveInput(null)}
               />
             </li>
             <li>
               <input 
                 required 
                 type="text" 
-                className={styles.input} 
+                className={`${styles.input} ${activeInput === 'coragem' ? styles.inputActive : ''}`} 
                 value={coragem} 
                 onChange={handleCoragemChange} 
                 placeholder="NIVEL DE CORAGEM" 
+                onFocus={() => setActiveInput('coragem')}
+                onBlur={() => setActiveInput(null)}
               />
             </li>
           </ul>
@@ -92,7 +95,6 @@ export default function Form() {
           <img className={styles.skullCatImg} src="/Assets/Cat_Skull.png" alt="Imagem de um crânio de gato" />
         </div>
       </div>
-
     </div>
   );
 }
