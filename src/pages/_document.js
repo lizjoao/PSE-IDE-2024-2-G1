@@ -4,10 +4,10 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
+        <title>Cine IDE</title>
         <Head>
           <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
           <link rel="shortcut icon" type="imagex/png" href="/Assets/Cat_Skull.png"></link>
-          <title>Cine IDE</title>
         </Head>
         <body>
           <Main />
