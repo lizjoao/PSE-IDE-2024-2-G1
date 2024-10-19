@@ -41,7 +41,7 @@
     border-radius: 10px;
 	border-color: transparent;
     color: #fff;
-    background-color: #ff4800;
+    background-color: #7a0000;
     font-size: 1.5rem;
     font-family: 'Milanello', sans-serif;
 	border-color: white;
@@ -50,13 +50,14 @@
 
 .input:hover {
 	transform: scale(1.05);
+	background-color: red;
 }
 
 .inputActive {
 	color: red;
 	transform: scale(1.05);
 	border-color: red;
-	background-color: #ffffff;
+	background-color: #ffffff !important;
 	outline-color: red;
 }
 

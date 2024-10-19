@@ -48,8 +48,8 @@ const assassinosData = [
     id: 7,
     nome: 'Jason',
 		nomeCurto: 'JASON',
-    imagem: '/Assets/Jason.png',
-    descricao: 'Jason Voorhees, da série "Friday the 13th", é um assassino icônico criado por Victor Miller. Após se afogar no Lago Crystal, busca vingança usando uma máscara de hóquei e um facão para matar campistas. Sua figura se tornou um símbolo do gênero slasher e um ícone da cultura pop.'
+    imagem: '/Assets/JSON.png',
+    descricao: 'No vasto deserto digital, um formato antigo espreita, aparentemente inofensivo, mas com um segredo sombrio: o JSON. Desenvolvedores ao redor do mundo o utilizam todos os dias, mas quando sistemas acessam seus dados, erros surgem, informações se perdem, arquivos se corrompem e os colchetes viram armadilhas, aprisionando o código em um ciclo confuso. À medida que o JSON se espalha, erros de parsing surgem inesperadamente, derrubando aplicações e deixando os desenvolvedores impotentes. O temido "undefined" está sempre à espreita. Eles pensavam que era só um formato de dados. Mas estavam enganados.'
   }
 ];
 

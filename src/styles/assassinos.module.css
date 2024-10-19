@@ -82,6 +82,7 @@
 }
 
 .image {
+  transform: scale(0.9);
   align-self: center;
   max-height: 550px;
   width: auto;
@@ -97,7 +98,7 @@
 }
 
 .image:hover {
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 .info {
